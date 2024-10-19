@@ -25,6 +25,8 @@ blackjax = ">=1.2.0"
 pymc = ">=5.16.2"
 nutpie = ">=0.13.1"
 ipykernel = ">=6.29.5,<7"
+equinox = ">=0.11.8,<0.12"
+diffrax = ">=0.6.0,<0.7"
 
 [target.osx.dependencies]
 libblas = { version = "*", build = "*accelerate" }
@@ -35,8 +37,6 @@ libblas = { version = "*", build = "*mkl" }
 [pypi-dependencies]
 # Install the local directory editable
 # name-of-project = { path = ".", editable = true }
-equinox = ">=0.11.7,<0.12"
-diffrax = ">=0.6,<0.7"
 
 [activation]
 # Prevent jax from preallocating most of the GPU to avoid
